@@ -29,21 +29,21 @@ namespace HArmadikHet_ETEFZY
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listUsers = new System.Windows.Forms.ListBox();
             this.lblLastName = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textLastName = new System.Windows.Forms.TextBox();
+            this.textFirstName = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // listUsers
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(25, 53);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(191, 212);
-            this.listBox1.TabIndex = 0;
+            this.listUsers.FormattingEnabled = true;
+            this.listUsers.Location = new System.Drawing.Point(25, 53);
+            this.listUsers.Name = "listUsers";
+            this.listUsers.Size = new System.Drawing.Size(191, 212);
+            this.listUsers.TabIndex = 0;
             // 
             // lblLastName
             // 
@@ -63,19 +63,19 @@ namespace HArmadikHet_ETEFZY
             this.lblFirstName.TabIndex = 2;
             this.lblFirstName.Text = "label2";
             // 
-            // textBox1
+            // textLastName
             // 
-            this.textBox1.Location = new System.Drawing.Point(348, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.textLastName.Location = new System.Drawing.Point(348, 45);
+            this.textLastName.Name = "textLastName";
+            this.textLastName.Size = new System.Drawing.Size(100, 20);
+            this.textLastName.TabIndex = 3;
             // 
-            // textBox2
+            // textFirstName
             // 
-            this.textBox2.Location = new System.Drawing.Point(348, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.textFirstName.Location = new System.Drawing.Point(348, 79);
+            this.textFirstName.Name = "textFirstName";
+            this.textFirstName.Size = new System.Drawing.Size(100, 20);
+            this.textFirstName.TabIndex = 4;
             // 
             // btnAdd
             // 
@@ -85,6 +85,7 @@ namespace HArmadikHet_ETEFZY
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "button1";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // Form1
             // 
@@ -92,11 +93,11 @@ namespace HArmadikHet_ETEFZY
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textFirstName);
+            this.Controls.Add(this.textLastName);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblLastName);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listUsers);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -106,11 +107,11 @@ namespace HArmadikHet_ETEFZY
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listUsers;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Label lblFirstName;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textLastName;
+        private System.Windows.Forms.TextBox textFirstName;
         private System.Windows.Forms.Button btnAdd;
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace HArmadikHet_ETEFZY.Entities
 {
-    public class User
-    {
+      class User
+        {
         public Guid ID { get; set; } = Guid.NewGuid();
         public string FisrtName { get; set; }
         public string LastName { get; set; }
