@@ -12,6 +12,7 @@ namespace HArmadikHet_ETEFZY
 {
     public partial class Form1 : Form
     {
+        BindingList<Us>
         public Form1()
         {
             InitializeComponent();
