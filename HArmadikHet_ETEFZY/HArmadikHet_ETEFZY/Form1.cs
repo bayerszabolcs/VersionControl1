@@ -17,8 +17,8 @@ namespace HArmadikHet_ETEFZY
         public Form1()
         {
             InitializeComponent();
-            lblLastName.Text = Resource1.LastName;
-            lblFirstName.Text = Resource1.FirstName;
+            lblLastName.Text = Resource1.FullName;
+            
             btnAdd.Text = Resource1.Add;
 
             listUsers.DataSource = users;
@@ -31,8 +31,8 @@ namespace HArmadikHet_ETEFZY
         {
             var u = new User()
             {
-                LastName = textLastName.Text,
-                FisrtName = textFirstName.Text
+                FullName = textLastName.Text,
+                
             };
             users.Add(u);
         }
