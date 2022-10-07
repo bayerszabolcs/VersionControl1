@@ -36,7 +36,8 @@ namespace NegyedikHet_ETEFZY
                 xlWB = xlApp.Workbooks.Add(Missing.Value);
                 xlSheet = xlWB.ActiveSheet;
 
-                //CreateTable();
+                CreateTable();
+                    
 
                 xlApp.Visible = true;
                 xlApp.UserControl = true;
@@ -53,6 +54,23 @@ namespace NegyedikHet_ETEFZY
                 xlApp = null;
                 
             }
+        }
+
+        private void CreateTable()
+        {
+            string[] headers = new string[]
+            {
+                "Kód",
+                "Eladó",
+                "Oldal",
+                "Kerület",
+                "Lift",
+                "Szobák száma",
+                "Alapterület (m2)",
+                "Ár (mFt)",
+                "Négyzetméter ár (Ft/m2)"
+
+            };
         }
 
         public void LoadData()
